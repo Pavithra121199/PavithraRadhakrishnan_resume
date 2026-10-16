@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pavithra Radhakrishnan | Senior Embedded Software Engineer</title>
+  <meta name="description" content="Portfolio of Pavithra Radhakrishnan, Senior Embedded Software Engineer specializing in AUTOSAR, BSW (COM/DCM/DEM), Diagnostics (UDS), and CAN/CAN FD/FlexRay communication for automotive platforms." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWix+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkR4j8z+G7q5R6Y5JYfY+fN0qB3Y6YfA5R0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="header" id="home">
+    <nav class="navbar container">
+      <a href="#home" class="logo" aria-label="Home">PR</a>
+      <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#achievements">Achievements</a></li>
+        <li><a href="#certifications">Certifications</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="theme-toggle" aria-label="Toggle dark mode">
+        <i class="fa-solid fa-moon"></i>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section container reveal" aria-labelledby="hero-title">
+      <canvas id="heroCanvas" aria-hidden="true"></canvas>
+      <div class="hero-float-icons" aria-hidden="true">
+        <span><i class="fa-solid fa-microchip"></i></span>
+        <span><i class="fa-solid fa-car"></i></span>
+        <span><i class="fa-solid fa-code-branch"></i></span>
+        <span><i class="fa-solid fa-network-wired"></i></span>
+        <span><i class="fa-solid fa-bug"></i></span>
+        <span><i class="fa-solid fa-gears"></i></span>
+      </div>
+      <div class="hero-content">
+        <p class="hero-intro">Hello, I am</p>
+        <h1 id="hero-title">Pavithra Radhakrishnan</h1>
+        <h2><span class="hero-typewriter"></span><span class="cursor" aria-hidden="true"></span></h2>
+        <p class="tagline">Senior Embedded Software Engineer with 4.5 years of experience in AUTOSAR BSW, COM and diagnostics at Bosch Global Software Technologies.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="assets/Pavithra%20Radhakrishnan_Resume.pdf" download="Pavithra_Radhakrishnan_Resume.pdf">
+            <i class="fa-solid fa-file-arrow-down"></i> Download Resume
+          </a>
+          <a class="btn btn-secondary" href="#contact">
+            Contact Me
+          </a>
+        </div>
+      </div>
+      <div class="hero-card">
+        <p class="card-label">Core Focus</p>
+        <ul>
+          <li><i class="fa-solid fa-layer-group"></i> AUTOSAR BSW – COM, DCM, DEM, RTE</li>
+          <li><i class="fa-solid fa-stethoscope"></i> CAN, CAN FD & FlexRay Communication</li>
+          <li><i class="fa-solid fa-tower-broadcast"></i> UDS Diagnostics, DIDs, Routines, DTCs</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="about" class="section container reveal">
+      <h3 class="section-title">About</h3>
+      <p class="section-text">
+        Results-driven Senior Embedded Software Engineer with 4.5 years of experience at Bosch Global Software Technologies,
+        contributing to Jaguar Land Rover steering programs.
+      </p>
+      <p class="section-text">
+        Hands-on expertise in AUTOSAR COM, BSW configuration, RTE integration, DCM/DEM, Embedded C, UDS diagnostics,
+        and CAN/CAN FD/FlexRay. Experienced across the automotive V-cycle, including requirements analysis,
+        implementation, testing, debugging, root-cause analysis, static analysis, and release support.
+      </p>
+      <ul class="highlights-list">
+        <li>Owned the communication component with 100% requirements traceability</li>
+        <li>Reduced COM validation effort by 90% through reusable vTestStudio and CAPL automation</li>
+        <li>Introduced author self-reviews, reducing review and rework time by 30%</li>
+        <li>Experienced in component ownership, test automation, and technical mentoring</li>
+      </ul>
+    </section>
+
+    <section id="skills" class="section container reveal">
+      <h3 class="section-title">Skills</h3>
+      <div class="skills-grid">
+        <article class="skill-card">
+          <i class="fa-solid fa-microchip"></i>
+          <h4>Programming</h4>
+          <p>Embedded C, C, Python, CAPL</p>
+        </article>
+        <article class="skill-card">
+          <i class="fa-solid fa-layer-group"></i>
+          <h4>AUTOSAR</h4>
+          <p>COM, DCM, DEM, BSW Configuration, RTE Development</p>
+        </article>
+        <article class="skill-card">
+          <i class="fa-solid fa-stethoscope"></i>
+          <h4>Diagnostics</h4>
+          <p>UDS (ISO 14229), DID Development, Diagnostic Routines, DTC Analysis</p>
+        </article>
+        <article class="skill-card">
+          <i class="fa-solid fa-tower-broadcast"></i>
+          <h4>Automotive Communication</h4>
+          <p>CAN, CAN FD, FlexRay, Rest Bus Simulation, Signal Routing</p>
+        </article>
+        <article class="skill-card">
+          <i class="fa-solid fa-clipboard-list"></i>
+          <h4>Requirements &amp; Design</h4>
+          <p>IBM DOORS, Enterprise Architect, Requirement Traceability, Impact Analysis, Software Design</p>
+        </article>
+        <article class="skill-card">
+          <i class="fa-solid fa-vials"></i>
+          <h4>Testing &amp; Validation</h4>
+          <p>TESSY, CANoe, CANape, Vector vTestStudio, vCAR, Unit Testing, Integration Testing</p>
+        </article>
+        <article class="skill-card">
+          <i class="fa-solid fa-bug"></i>
+          <h4>Debugging &amp; Analysis</h4>
+          <p>TRACE32/Lauterbach, GLIWA T1, Root-Cause Analysis, Runtime Analysis</p>
+        </article>
+        <article class="skill-card">
+          <i class="fa-solid fa-robot"></i>
+          <h4>Functional Safety &amp; Quality</h4>
+          <p>ISO 26262, E2E protection, AbsInt Astrée, MISRA C</p>
+        </article>
+        <article class="skill-card">
+          <i class="fa-solid fa-code-branch"></i>
+          <h4>Tools</h4>
+          <p>AEEE Pro, SystemDesk, IBM DOORS, Enterprise Architect, Git, Bitbucket, JIRA, VS Code</p>
+        </article>
+        <article class="skill-card">
+          <i class="fa-solid fa-people-group"></i>
+          <h4>Processes</h4>
+          <p>Automotive V-Cycle, ASPICE, Agile, Requirements Traceability</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="experience" class="section container reveal">
+      <h3 class="section-title">Experience</h3>
+      <div class="timeline">
+        <article class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h4>Bosch Global Software Technologies</h4>
+            <p class="timeline-period">Senior Engineer – Embedded Software Development &middot; April 2022 – Present</p>
+            <p class="timeline-role">Jaguar Land Rover (JLR) steering software | April 2022 – Present</p>
+            <p><strong>JLR SCU4 D6 | CAN FD</strong></p>
+            <ul>
+              <li>Implemented communication signals and signal groups from customer DBC specifications, including AUTOSAR BSW configuration, RTE integration, application implementation, and testing.</li>
+              <li>Owned the communication component and achieved 100% traceability across design, implementation, unit testing, and component testing.</li>
+              <li>Implemented E2E protection for communication-fault detection in line with functional safety requirements.</li>
+              <li>Enhanced CANoe Rest Bus Simulation using CAPL; performed unit testing with TESSY and vCAR, and communication and diagnostic validation with CANoe and CANape.</li>
+              <li>Debugged with TRACE32, performed runtime and timing analysis with GLIWA T1, and resolved AbsInt Astrée and MISRA C findings.</li>
+              <li>Used IBM DOORS for requirements and impact analysis; introduced author self-reviews that reduced review and rework time by 30%.</li>
+              <li>Conducted code and design reviews, mentored junior engineers, and demonstrated the RB Security Access feature (Gen2) in Germany.</li>
+            </ul>
+            <p><strong>JLR BWI | FlexRay</strong></p>
+            <ul>
+              <li>Performed software maintenance, enhancement, defect analysis, and issue resolution.</li>
+              <li>Developed customer-specific diagnostic DIDs and routines, analyzed software architecture and communication flows, and owned MONID configuration within DEM-related activities.</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="projects" class="section container reveal">
+      <h3 class="section-title">Projects</h3>
+      <div class="project-grid">
+
+        <article class="project-card">
+          <h4>JLR SCU4 D6 – Steering Control Unit</h4>
+          <p class="project-domain">Client: Jaguar Land Rover &middot; Domain: Automotive Steering &middot; Protocol: CAN FD</p>
+          <p>
+            Communication component development for the JLR Steering Control Unit, spanning customer DBC signal
+            implementation, AUTOSAR BSW configuration, RTE integration, testing, and release support.
+          </p>
+          <div class="project-stack">
+            <span>AUTOSAR</span>
+            <span>Embedded C</span>
+            <span>AEEE Pro</span>
+            <span>SystemDesk</span>
+            <span>TESSY</span>
+            <span>vCAR</span>
+            <span>CANoe</span>
+            <span>CANape</span>
+            <span>vTestStudio</span>
+            <span>TRACE32</span>
+            <span>GLIWA T1</span>
+          </div>
+          <ul class="project-points">
+            <li>Owned the communication component and maintained 100% traceability across design, implementation, and testing.</li>
+            <li>Implemented E2E protection for communication signals and enhanced CANoe Rest Bus Simulation using CAPL.</li>
+            <li>Performed unit testing with TESSY and vCAR, plus communication and diagnostic validation with CANoe and CANape.</li>
+            <li>Debugged with TRACE32 and conducted runtime and timing analysis using GLIWA T1.</li>
+          </ul>
+        </article>
+
+        <article class="project-card">
+          <h4>JLR BWI</h4>
+          <p class="project-domain">Client: Jaguar Land Rover &middot; Protocol: FlexRay</p>
+          <p>
+            Maintenance and enhancement activities on a FlexRay-based JLR platform, with ownership of
+            DEM-related topics and successful, on-time delivery of project commitments.
+          </p>
+          <div class="project-stack">
+            <span>AUTOSAR DEM</span>
+            <span>FlexRay</span>
+            <span>Embedded C</span>
+            <span>Defect Analysis</span>
+            <span>Validation</span>
+          </div>
+          <ul class="project-points">
+            <li>Performed defect analysis and resolved issues across communication and diagnostic flows.</li>
+            <li>Analyzed software architecture and supported validation and release activities.</li>
+            <li>Owned MONID configuration within DEM-related activities and delivered project commitments under tight deadlines.</li>
+          </ul>
+        </article>
+
+        <article class="project-card">
+          <h4>COM Validation &amp; Part-Number Automation</h4>
+          <p class="project-domain">Cross-Project &middot; Engineering Productivity</p>
+          <p>
+            Reusable validation automation and Python tooling developed to improve efficiency and reduce manual errors.
+          </p>
+          <div class="project-stack">
+            <span>Python</span>
+            <span>CAPL</span>
+            <span>vTestStudio</span>
+          </div>
+          <ul class="project-points">
+            <li>Developed reusable COM validation automation with Vector vTestStudio and CAPL, reducing validation effort by 90%.</li>
+            <li>Developed Python-based part-number automation to minimize manual errors.</li>
+          </ul>
+        </article>
+
+      </div>
+    </section>
+
+    <section id="achievements" class="section container reveal">
+      <h3 class="section-title">Achievements</h3>
+      <div class="counter-grid">
+        <article class="counter-card">
+          <span class="counter" data-target="100">0</span>
+          <p>Requirements Traceability (%)</p>
+        </article>
+        <article class="counter-card">
+          <span class="counter" data-target="90">0</span>
+          <p>Less COM Validation Effort (%)</p>
+        </article>
+        <article class="counter-card">
+          <span class="counter" data-target="30">0</span>
+          <p>Less Review and Rework Time (%)</p>
+        </article>
+      </div>
+      <div class="achievements-grid">
+        <article class="achievement-card">
+          <i class="fa-solid fa-trophy"></i>
+          <h4>Top &amp; Best Performer</h4>
+          <p>Top Performer – DCM Skill Acceleration Program and Best Performer – Diagnostics &amp; COM Competency Development Program.</p>
+        </article>
+        <article class="achievement-card">
+          <i class="fa-solid fa-medal"></i>
+          <h4>Bosch Recognition Awards</h4>
+          <p>Multiple Bosch Quarterly Awards, Shabash Awards, Rockstar Awards, and Team Recognition Awards.</p>
+        </article>
+        <article class="achievement-card">
+          <i class="fa-solid fa-users-gear"></i>
+          <h4>Crowdsourcing Champion</h4>
+          <p>Crowdsourcing Champion Award for completing activities across projects.</p>
+        </article>
+        <article class="achievement-card">
+          <i class="fa-solid fa-lightbulb"></i>
+          <h4>Career Coach Platform</h4>
+          <p>Received recognition for building an AI-powered Career Coach Platform at the Be10X hackathon.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="certifications" class="section container reveal">
+      <h3 class="section-title">Certifications &amp; Development</h3>
+      <ul class="highlights-list">
+        <li>IREB Certified Professional for Requirements Engineering (CPRE) – Foundation Level</li>
+        <li>ISTQB Certified Tester – Foundation Level</li>
+        <li>Diagnostics Skill Acceleration Program</li>
+        <li>COM and Infrastructure Skill Acceleration Program</li>
+        <li>Technical Career Qualification</li>
+        <li>Be10X AI Career Accelerator Program</li>
+      </ul>
+    </section>
+
+    <section id="education" class="section container reveal">
+      <h3 class="section-title">Education</h3>
+      <article class="education-card">
+        <h4>Bachelor of Engineering – Electronics and Communication Engineering (ECE)</h4>
+        <p>Kongu Engineering College, Perundurai | August 2017 – May 2021 | CGPA: 9.18 / 10</p>
+      </article>
+      <article class="education-card">
+        <h4>Higher Secondary Education</h4>
+        <p>SVN Matriculation Higher Secondary School, Erode | June 2016 – May 2017 | 95.67%</p>
+      </article>
+      <article class="education-card">
+        <h4>SSLC</h4>
+        <p>SVN Matriculation Higher Secondary School, Erode | June 2014 – May 2015 | 99.6%</p>
+      </article>
+    </section>
+
+    <section id="contact" class="section container reveal">
+      <h3 class="section-title">Contact</h3>
+      <div class="contact-wrapper">
+
+        <div class="contact-headline">
+          <div class="contact-glow" aria-hidden="true"></div>
+          <p class="contact-eyebrow"><i class="fa-solid fa-paper-plane"></i> Let's Connect</p>
+          <h4>Have a project or opportunity?<br>Let's talk.</h4>
+          <p class="contact-sub">I'm open to roles and collaboration in Automotive Embedded Software, AUTOSAR, Diagnostics, and Validation Automation.</p>
+          <div class="contact-badge-row">
+            <span><i class="fa-solid fa-circle-check"></i> Open to Opportunities</span>
+            <span><i class="fa-solid fa-car"></i> Automotive Domain</span>
+          </div>
+        </div>
+
+        <div class="contact-cards">
+          <a class="contact-card" href="mailto:pavithrakrishnan1211@gmail.com">
+            <div class="cc-body">
+              <p class="cc-label">Email</p>
+              <p class="cc-value">pavithrakrishnan1211@gmail.com</p>
+            </div>
+          </a>
+          <a class="contact-card" href="tel:+919080523706" aria-label="Call +91 9080523706">
+            <div class="cc-body">
+              <p class="cc-label">Phone</p>
+              <p class="cc-value">+91 9080523706</p>
+            </div>
+          </a>
+          <a class="contact-card" href="https://www.linkedin.com/in/pavithra-radhakrishnan1211" target="_blank" rel="noopener noreferrer">
+            <div class="cc-body">
+              <p class="cc-label">LinkedIn</p>
+              <p class="cc-value">linkedin.com/in/pavithra-radhakrishnan1211</p>
+            </div>
+          </a>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <button id="backToTop" class="back-to-top" aria-label="Back to top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <footer class="footer">
+    <div class="container footer-content">
+      <p>&copy; <span id="year"></span> Pavithra Radhakrishnan. All rights reserved.</p>
+      <div class="social-links">
+        <a href="mailto:pavithrakrishnan1211@gmail.com">Email</a>
+        <a href="https://www.linkedin.com/in/pavithra-radhakrishnan1211" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="tel:+919080523706">Phone</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

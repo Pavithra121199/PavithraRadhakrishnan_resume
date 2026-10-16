@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | Pavithra Radhakrishnan</title>
+  <meta name="description" content="Contact Pavithra Radhakrishnan, Senior Embedded Software Engineer, for opportunities and project discussions in Automotive Embedded, AUTOSAR, and Diagnostics." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWix+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkR4j8z+G7q5R6Y5JYfY+fN0qB3Y6YfA5R0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="header scrolled" id="home">
+    <nav class="navbar container">
+      <a href="index.html" class="logo" aria-label="Home">PR</a>
+      <a class="btn btn-secondary" href="index.html"><i class="fa-solid fa-arrow-left"></i> Back to Portfolio</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="contact" class="section container" style="padding-top: 7.5rem;">
+      <h3 class="section-title">Contact</h3>
+      <div class="contact-wrapper">
+
+        <div class="contact-headline">
+          <div class="contact-glow" aria-hidden="true"></div>
+          <p class="contact-eyebrow"><i class="fa-solid fa-paper-plane"></i> Let's Connect</p>
+          <h4>Have a project or opportunity?<br>Let's talk.</h4>
+          <p class="contact-sub">I'm open to roles and collaboration in Automotive Embedded Software, AUTOSAR, Diagnostics, and Validation Automation.</p>
+          <div class="contact-badge-row">
+            <span><i class="fa-solid fa-circle-check"></i> Open to Opportunities</span>
+            <span><i class="fa-solid fa-car"></i> Automotive Domain</span>
+          </div>
+        </div>
+
+        <div class="contact-cards">
+          <a class="contact-card" href="mailto:pavithrakrishnan1211@gmail.com">
+            <div class="cc-icon"><i class="fa-solid fa-envelope"></i></div>
+            <div class="cc-body">
+              <p class="cc-label">Email</p>
+              <p class="cc-value">pavithrakrishnan1211@gmail.com</p>
+            </div>
+            <i class="fa-solid fa-arrow-right cc-arrow"></i>
+          </a>
+          <a class="contact-card" href="tel:+919080523706" aria-label="Call +91 9080523706">
+            <div class="cc-icon"><i class="fa-solid fa-phone"></i></div>
+            <div class="cc-body">
+              <p class="cc-label">Phone</p>
+              <p class="cc-value">+91 9080523706</p>
+            </div>
+            <i class="fa-solid fa-arrow-right cc-arrow"></i>
+          </a>
+          <a class="contact-card" href="https://www.linkedin.com/in/pavithra-radhakrishnan1211" target="_blank" rel="noopener noreferrer">
+            <div class="cc-icon linkedin"><i class="fa-brands fa-linkedin-in"></i></div>
+            <div class="cc-body">
+              <p class="cc-label">LinkedIn</p>
+              <p class="cc-value">linkedin.com/in/pavithra-radhakrishnan1211</p>
+            </div>
+            <i class="fa-solid fa-arrow-right cc-arrow"></i>
+          </a>
+        </div>
+
+      </div>
+
+      <form class="contact-form-panel" id="contactForm" action="#" method="post">
+        <h4><i class="fa-regular fa-message"></i> Send a Message</h4>
+        <div class="contact-form-grid">
+          <div>
+            <label for="contact-name">Name</label>
+            <input id="contact-name" name="full_name" type="text" placeholder="Your full name" required />
+          </div>
+          <div>
+            <label for="contact-email">Email</label>
+            <input id="contact-email" name="email" type="email" placeholder="your@email.com" required />
+          </div>
+        </div>
+        <label for="contact-subject">Subject</label>
+        <input id="contact-subject" name="subject" type="text" placeholder="Project discussion" required />
+
+        <label for="contact-message">Message</label>
+        <textarea id="contact-message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+
+        <button type="submit" class="btn btn-primary form-submit-btn" id="contactSubmitBtn">
+          <span class="spinner" aria-hidden="true"></span>
+          <i class="fa-solid fa-paper-plane"></i>
+          <span class="btn-text">Send Message</span>
+        </button>
+        <p id="formStatus" class="form-status" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-content">
+      <p>&copy; <span id="year"></span> Pavithra Radhakrishnan. All rights reserved.</p>
+      <div class="social-links">
+        <a href="mailto:pavithrakrishnan1211@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+        <a href="https://www.linkedin.com/in/pavithra-radhakrishnan1211" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="tel:+919080523706" aria-label="Phone"><i class="fa-solid fa-phone"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+  <script type="module" src="contact-submit.js"></script>
+</body>
+</html>

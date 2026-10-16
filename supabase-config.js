@@ -1,0 +1,2 @@
+export const SUPABASE_URL = 'https://amitajaqcrcrasujqycc.supabase.co';
+export const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImFtaXRhamFxY3JjcmFzdWpxeWNjIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzU5NzAyMjYsImV4cCI6MjA5MTU0NjIyNn0.kX9wA2xK-eY3_e5-R5VDIVnvF42oQZ8txsk2gqs1I1k';
